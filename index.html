@@ -1,0 +1,26 @@
+<html>
+<head>
+
+</head>
+<body>
+
+<video id="videoMain" width="640" height="480" style="display: none;"></video>
+<canvas id="canvasMain"></canvas>
+
+<script src="web/js/webrtccam.js"></script>
+<script>
+  var options = {
+    videoElement: document.getElementById('videoMain'),
+    canvasElement: document.getElementById('canvasMain'),
+    fps: 30,
+    width: 640,
+    height: 480
+  };
+
+  var cam = new WebRtcCam(options)
+  cam.init();
+</script>
+
+
+</body>
+</html>
